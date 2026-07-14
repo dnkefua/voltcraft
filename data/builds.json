@@ -1,0 +1,260 @@
+[
+  {
+    "id": "solar-usb-charger",
+    "title": "Pocket Solar USB Phone Charger",
+    "description": "A palm-sized solar charger that tops up your phone anywhere the sun shines. Built from a 5V solar panel and a USB buck converter module — a perfect first electronics build.",
+    "sourceUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "sourcePlatform": "youtube",
+    "creator": "@diyenergylab",
+    "category": "solar",
+    "difficulty": "beginner",
+    "estCost": 18,
+    "buildTime": "1–2 hours",
+    "powerOutput": "5V / up to 1A in full sun (~5W)",
+    "materials": [
+      { "name": "5V 6W solar panel", "qty": "1", "estPrice": 10 },
+      { "name": "USB buck converter module (5V regulated)", "qty": "1", "estPrice": 4 },
+      { "name": "22 AWG hookup wire", "qty": "1 m", "estPrice": 1 },
+      { "name": "Project enclosure or 3D-printed case", "qty": "1", "estPrice": 3 }
+    ],
+    "tools": ["Soldering iron", "Wire strippers", "Hot glue gun", "Multimeter"],
+    "steps": [
+      { "order": 1, "text": "Test the solar panel with a multimeter in direct sunlight — you should see 5–6V open circuit." },
+      { "order": 2, "text": "Solder the panel's positive lead to the buck converter's VIN+ pad and negative to VIN−." },
+      { "order": 3, "text": "Verify 5.0–5.2V at the converter's USB output under sunlight before connecting any device." },
+      { "order": 4, "text": "Mount the converter behind the panel with hot glue, leaving the USB port accessible." },
+      { "order": 5, "text": "Enclose the electronics, leaving the panel face exposed. Add a keychain loop if you like." },
+      { "order": 6, "text": "Test-charge an old phone first, and monitor for heat during the first full charge." }
+    ],
+    "safetyLevel": "low",
+    "safetyWarnings": [
+      "Always verify output voltage with a multimeter before plugging in a phone.",
+      "Do not leave charging devices unattended in direct hot sun."
+    ],
+    "claimCheck": "legit-diy",
+    "status": "published",
+    "createdAt": "2026-06-02T10:00:00Z"
+  },
+  {
+    "id": "pvc-wind-turbine",
+    "title": "PVC-Blade Backyard Wind Turbine",
+    "description": "A small wind turbine using blades cut from PVC pipe and a DC treadmill motor as the generator. Charges a 12V battery in steady wind — a classic off-grid starter project.",
+    "sourceUrl": "https://www.youtube.com/watch?v=ZbSJgKHnpBc",
+    "sourcePlatform": "youtube",
+    "creator": "@offgridgarage",
+    "category": "wind",
+    "difficulty": "intermediate",
+    "estCost": 95,
+    "buildTime": "1–2 weekends",
+    "powerOutput": "20–100W in 10–20 mph wind (12V charging)",
+    "materials": [
+      { "name": "8\" PVC pipe, 24\" length (for 3 blades)", "qty": "1", "estPrice": 15 },
+      { "name": "DC treadmill motor (used, 90V+)", "qty": "1", "estPrice": 35 },
+      { "name": "Steel hub / sawblade hub adapter", "qty": "1", "estPrice": 10 },
+      { "name": "Charge controller (12V, with dump load)", "qty": "1", "estPrice": 20 },
+      { "name": "Galvanized pipe mast + fittings", "qty": "1 set", "estPrice": 12 },
+      { "name": "Plywood tail vane", "qty": "1", "estPrice": 3 }
+    ],
+    "tools": ["Jigsaw", "Drill", "Angle grinder", "Wrench set", "Multimeter"],
+    "steps": [
+      { "order": 1, "text": "Cut three identical curved blades from the PVC pipe using a printable template — the pipe's curve gives the airfoil shape." },
+      { "order": 2, "text": "Drill and bolt the blades to the hub at equal 120° spacing. Balance the rotor on a nail — sand heavy blades until it sits level." },
+      { "order": 3, "text": "Mount the hub on the treadmill motor shaft. Spin it by hand and confirm voltage output on the multimeter." },
+      { "order": 4, "text": "Bolt the motor to a yaw platform with the plywood tail vane so it turns into the wind." },
+      { "order": 5, "text": "Mount the assembly on the mast with guy wires. Keep it above roof turbulence if possible." },
+      { "order": 6, "text": "Wire through the charge controller to the 12V battery. Never run the turbine unloaded in high wind — it can overspeed." }
+    ],
+    "safetyLevel": "medium",
+    "safetyWarnings": [
+      "Spinning blades can cause serious injury — mount well above head height.",
+      "Always connect a load or brake before high winds; unloaded turbines overspeed and can shed blades.",
+      "Battery charging produces hydrogen gas — ventilate the battery area."
+    ],
+    "claimCheck": "legit-diy",
+    "status": "published",
+    "createdAt": "2026-05-28T10:00:00Z"
+  },
+  {
+    "id": "teg-candle-generator",
+    "title": "Candle-Powered Thermoelectric Phone Charger",
+    "description": "Uses a Peltier/TEG module sandwiched between a candle-heated plate and a heatsink to generate real electricity from a temperature difference. Slow but genuinely works — great physics demo.",
+    "sourceUrl": "https://www.tiktok.com/@thermoworks/video/7301234567890123456",
+    "sourcePlatform": "tiktok",
+    "creator": "@thermoworks",
+    "category": "thermoelectric",
+    "difficulty": "intermediate",
+    "estCost": 32,
+    "buildTime": "2–3 hours",
+    "powerOutput": "~1–2W with a good temperature difference",
+    "materials": [
+      { "name": "TEG module (SP1848 or TEC1-12706)", "qty": "2", "estPrice": 12 },
+      { "name": "CPU heatsink with fins", "qty": "1", "estPrice": 8 },
+      { "name": "Aluminum plate 3mm", "qty": "1", "estPrice": 5 },
+      { "name": "DC-DC boost converter to 5V USB", "qty": "1", "estPrice": 5 },
+      { "name": "Thermal paste", "qty": "1 tube", "estPrice": 2 }
+    ],
+    "tools": ["Soldering iron", "Drill", "Multimeter", "Tea light candles"],
+    "steps": [
+      { "order": 1, "text": "Apply thermal paste and sandwich the TEG modules between the aluminum plate (hot side) and the heatsink (cold side)." },
+      { "order": 2, "text": "Clamp the sandwich with bolts at the corners — good contact pressure matters more than anything else." },
+      { "order": 3, "text": "Wire the two TEGs in series and connect to the boost converter input." },
+      { "order": 4, "text": "Build a small stand so a tea light sits about 2 cm below the aluminum plate." },
+      { "order": 5, "text": "Light the candle, wait 2–3 minutes for the temperature difference to develop, and check the 5V USB output." },
+      { "order": 6, "text": "For more power, add a small fan on the heatsink (powered by the TEG itself) to keep the cold side cold." }
+    ],
+    "safetyLevel": "medium",
+    "safetyWarnings": [
+      "Open flame — never leave unattended, keep away from flammable materials.",
+      "The hot plate exceeds 200°C — burn hazard.",
+      "TEC modules (vs true TEGs) can be damaged above ~150°C hot-side."
+    ],
+    "claimCheck": "legit-diy",
+    "status": "published",
+    "createdAt": "2026-06-20T10:00:00Z"
+  },
+  {
+    "id": "hand-crank-generator",
+    "title": "Hand-Crank Emergency Generator",
+    "description": "A geared DC motor with a crank handle that charges small devices or a battery bank by hand. Great emergency-kit project and a solid intro to generators.",
+    "sourceUrl": "https://www.youtube.com/watch?v=WBjLzWSHKys",
+    "sourcePlatform": "youtube",
+    "creator": "@preppedworkshop",
+    "category": "mechanical",
+    "difficulty": "beginner",
+    "estCost": 22,
+    "buildTime": "2 hours",
+    "powerOutput": "3–8W sustained by hand cranking",
+    "materials": [
+      { "name": "Geared DC motor (12V, low RPM)", "qty": "1", "estPrice": 9 },
+      { "name": "Crank handle or 3D-printed crank", "qty": "1", "estPrice": 3 },
+      { "name": "Bridge rectifier + capacitor", "qty": "1", "estPrice": 3 },
+      { "name": "5V USB regulator module", "qty": "1", "estPrice": 4 },
+      { "name": "Plywood base and clamps", "qty": "1", "estPrice": 3 }
+    ],
+    "tools": ["Screwdriver", "Soldering iron", "Drill"],
+    "steps": [
+      { "order": 1, "text": "Bolt the geared motor to the plywood base so it won't twist while cranking." },
+      { "order": 2, "text": "Attach the crank handle to the motor's output shaft." },
+      { "order": 3, "text": "Wire motor output through the bridge rectifier so polarity is correct regardless of crank direction." },
+      { "order": 4, "text": "Add the smoothing capacitor, then the 5V USB regulator." },
+      { "order": 5, "text": "Crank at a steady comfortable pace and confirm 5V at the USB port with a multimeter." },
+      { "order": 6, "text": "Optional: charge a small 12V SLA or power bank instead so devices see clean, steady power." }
+    ],
+    "safetyLevel": "low",
+    "safetyWarnings": [
+      "Charge a power bank rather than a phone directly — hand cranking gives uneven voltage."
+    ],
+    "claimCheck": "legit-diy",
+    "status": "published",
+    "createdAt": "2026-06-25T10:00:00Z"
+  },
+  {
+    "id": "bicycle-pedal-generator",
+    "title": "Bicycle Pedal Power Station",
+    "description": "Converts an old bike + training stand into a pedal generator that can run lights, charge batteries, or power a laptop. Real sustained human power output: 50–150W.",
+    "sourceUrl": "https://www.youtube.com/watch?v=S3PHbUV0OFA",
+    "sourcePlatform": "youtube",
+    "creator": "@pedalpowerprojects",
+    "category": "mechanical",
+    "difficulty": "advanced",
+    "estCost": 140,
+    "buildTime": "1 weekend",
+    "powerOutput": "50–150W sustained pedaling",
+    "materials": [
+      { "name": "Old bicycle + rear training stand", "qty": "1", "estPrice": 40 },
+      { "name": "24V DC scooter motor (as generator)", "qty": "1", "estPrice": 35 },
+      { "name": "Drive roller or friction wheel", "qty": "1", "estPrice": 10 },
+      { "name": "Charge controller + 12V deep-cycle battery", "qty": "1", "estPrice": 45 },
+      { "name": "300W power inverter", "qty": "1", "estPrice": 25 },
+      { "name": "Fuse holder + 15A fuses", "qty": "1 set", "estPrice": 5 }
+    ],
+    "tools": ["Wrench set", "Drill", "Angle grinder", "Multimeter", "Crimper"],
+    "steps": [
+      { "order": 1, "text": "Mount the bike on the training stand and position the scooter motor so its roller presses against the rear tire." },
+      { "order": 2, "text": "Fabricate a spring-tensioned bracket so the roller keeps firm contact with the tire." },
+      { "order": 3, "text": "Pedal and measure open-circuit voltage — gearing should give 14–20V at a comfortable cadence." },
+      { "order": 4, "text": "Wire motor → fuse → charge controller → battery. The battery buffers your uneven pedaling." },
+      { "order": 5, "text": "Connect the inverter to the battery terminals with thick gauge wire." },
+      { "order": 6, "text": "Run your load from the inverter. Track watt output with an inline meter to gamify workouts." }
+    ],
+    "safetyLevel": "high",
+    "safetyWarnings": [
+      "Inverter output is 120V AC — same shock hazard as a wall outlet.",
+      "Always fuse the battery line; lead-acid batteries can deliver hundreds of amps into a short.",
+      "Batteries vent hydrogen when charging — keep sparks away and ventilate."
+    ],
+    "claimCheck": "legit-diy",
+    "status": "published",
+    "createdAt": "2026-05-15T10:00:00Z"
+  },
+  {
+    "id": "soda-can-solar-heater",
+    "title": "Soda Can Solar Air Heater",
+    "description": "A window-mounted panel of black-painted aluminum cans that heats room air using pure sunlight — no electricity generated, but real free heating that can cut winter bills.",
+    "sourceUrl": "https://www.tiktok.com/@cabinhacks/video/7289876543210987654",
+    "sourcePlatform": "tiktok",
+    "creator": "@cabinhacks",
+    "category": "thermal",
+    "difficulty": "beginner",
+    "estCost": 45,
+    "buildTime": "1 weekend",
+    "powerOutput": "~200–500W equivalent heat on sunny days",
+    "materials": [
+      { "name": "Empty aluminum cans", "qty": "72", "estPrice": 0 },
+      { "name": "Plywood sheet + 2x4 frame lumber", "qty": "1 set", "estPrice": 20 },
+      { "name": "Polycarbonate/plexiglass sheet", "qty": "1", "estPrice": 15 },
+      { "name": "High-temp flat black spray paint", "qty": "2 cans", "estPrice": 8 },
+      { "name": "High-temp silicone sealant", "qty": "1 tube", "estPrice": 4 },
+      { "name": "Small 12V PC fan (optional, solar-powered)", "qty": "1", "estPrice": 5 }
+    ],
+    "tools": ["Drill with step bit", "Saw", "Caulk gun", "Tin snips"],
+    "steps": [
+      { "order": 1, "text": "Drill or punch holes through the bottom of each can so air can flow through them." },
+      { "order": 2, "text": "Glue cans into vertical columns (tubes) with high-temp silicone — typically 6 columns of 12 cans." },
+      { "order": 3, "text": "Build the plywood box with an air inlet at the bottom and outlet at the top." },
+      { "order": 4, "text": "Paint the can columns flat black and mount them inside the box." },
+      { "order": 5, "text": "Seal the clear glazing over the front. Air gaps kill efficiency — caulk everything." },
+      { "order": 6, "text": "Mount facing south (northern hemisphere) and duct the outlet through a window panel. Add the fan for better flow." }
+    ],
+    "safetyLevel": "low",
+    "safetyWarnings": [
+      "Outlet air can exceed 60°C on bright days — use ducting rated for heat.",
+      "Sharp can edges — wear gloves during prep."
+    ],
+    "claimCheck": "legit-diy",
+    "status": "published",
+    "createdAt": "2026-04-10T10:00:00Z"
+  },
+  {
+    "id": "magnet-wire-lightbulb-myth",
+    "title": "\"Magnet + Copper Coil Free Energy Light Bulb\"",
+    "description": "A viral build claiming a magnet taped inside a copper coil lights a bulb forever with no power source. We catalog it because it's everywhere on TikTok — read the claim check before wasting your money.",
+    "sourceUrl": "https://www.tiktok.com/@freeenergyhacks/video/7312345678901234567",
+    "sourcePlatform": "tiktok",
+    "creator": "@freeenergyhacks",
+    "category": "other",
+    "difficulty": "beginner",
+    "estCost": 12,
+    "buildTime": "30 minutes (to disappointment)",
+    "powerOutput": "0W — does not and cannot work",
+    "materials": [
+      { "name": "Copper wire coil", "qty": "1", "estPrice": 6 },
+      { "name": "Neodymium magnets", "qty": "4", "estPrice": 5 },
+      { "name": "LED bulb", "qty": "1", "estPrice": 1 }
+    ],
+    "tools": ["Tape"],
+    "steps": [
+      { "order": 1, "text": "This build is documented for educational purposes — it does not produce energy." },
+      { "order": 2, "text": "A stationary magnet inside a coil induces zero current. Faraday's law requires a CHANGING magnetic field (the magnet must move relative to the coil)." },
+      { "order": 3, "text": "Viral videos of this 'working' use hidden button-cell batteries inside the bulb base or cuts in the footage." },
+      { "order": 4, "text": "Want the real version? Spin the magnet with wind, water, or a hand crank — that's just... a generator! See our legit builds." }
+    ],
+    "safetyLevel": "low",
+    "safetyWarnings": [
+      "The main hazard here is to your wallet."
+    ],
+    "claimCheck": "over-unity-myth",
+    "status": "published",
+    "createdAt": "2026-06-30T10:00:00Z"
+  }
+]
